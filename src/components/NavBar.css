@@ -1,8 +1,11 @@
 .bnt-circle{
+    background-color: #0090CF!important;
     border-radius: 25px;
     padding: 2px 2rem;
-    color: #fff;
+    color: #fff!important;
     font-weight: 50;
+    text-align: center;
+    margin: 0 10px;
 }
 
 .bebello-logo{
@@ -24,4 +27,28 @@
     padding: 5rem;
     background-position: center;
     background-size: cover !important;
+}
+
+.nav-link-to{
+    color: #fff;
+    display: block;
+    padding: .5rem 1rem;
+    text-decoration: none;
+
+}
+
+.nav-link-to:hover{
+ 
+    text-decoration: none;
+
+}
+
+.nav-link{
+    font-weight: 700;
+    padding: .5rem 1rem!important;
+    color: #0090CF!important;
+}
+
+.nav-link:hover{
+    border-bottom: 2px solid #0090CF;
 }
