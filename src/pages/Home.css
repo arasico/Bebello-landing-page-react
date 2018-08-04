@@ -1,3 +1,24 @@
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    letter-spacing: 1px; 
+    font-size: 16px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    letter-spacing: 1px; 
+    font-size: 16px;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    letter-spacing: 1px; 
+    font-size: 16px;
+}
+
 .home-page{
     text-decoration: none;
 }
@@ -37,7 +58,11 @@
     width: 100%;
     height: 100%;
     border: 0;
+    letter-spacing: 5px;
+    font-size: 30px;
     padding: 0 10px;
+    color:#333333;
+
 
 
 }
@@ -145,13 +170,22 @@
     text-decoration: none;
     background-color: #333333;
     color: #fff;
+    border: 2px solid #222222;       
 
 }
 
 .btn-black:hover{
 
-    background-color:  #222222;
-    color:#fff;
+    background-color:  #fff;
+    color:#333333;
     text-decoration: none;
+    border: 2px solid #222222;
 
+}
+
+.cloud-dark{
+    background-image: url('../images/bebello-cloud.png'), linear-gradient(#fff, #004877);
+    padding: 5rem;
+    background-position: center;
+    background-size: cover !important;
 }

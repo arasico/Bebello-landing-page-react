@@ -36,9 +36,7 @@ class NavBar extends Component{
                 </div>
               
         </nav>
-          <div className="cloud">
- 
-      </div>
+          <div className="cloud"></div>
                 </div>
 
         );

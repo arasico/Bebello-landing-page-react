@@ -45,7 +45,7 @@
                                             <div className="p-left"><span>IR +98</span> </div>
 
                                             <div className="p-center">
-                                                <input className="input-search" placeholder="Search number . . ." type="text" value={this.state.value} onChange={this.handleChange} />
+                                                <input className="input-search" placeholder="Search phone number or Email . . ." type="text" value={this.state.value} onChange={this.handleChange} />
                                             </div>
                                             
                                             <div className="p-right">
@@ -80,9 +80,12 @@
                             <div className="col-lg-6">
                                 <img className="mobile-app" src ={mobilePhoto} />
                             </div>
-                        </div>                  
+                        </div>  
+
+                              
 
                    </div>
+                   <div className="cloud-dark"></div>         
                 <Footer />
             </div>
             );
