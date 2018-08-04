@@ -70,7 +70,7 @@
                                 <p className="text-decor">The best caller ID and block for all your calls and SMS.</p>
                                 <div className="row">
                                     <div className="col-6">
-                                        <Link  to="#" class="btn-home btn-download">Download App</Link>
+                                        <Link  to="Download" class="btn-home btn-download">Download App</Link>
                                     </div>
                                     <div className="col-6">
                                         <Link  to="#" class="btn-home btn-black">Know More</Link>
