@@ -7,6 +7,7 @@ import Home from './pages/Home.jsx';
 import Download from './pages/DownloadApp.jsx';
 import About from './pages/AboutUs.jsx';
 import Bebello from './pages/Bebello.jsx';
+import Search from './pages/Search.jsx';
 
 
 class App extends Component {
@@ -21,6 +22,7 @@ class App extends Component {
           <Route  path="/Bebello" component={Bebello} />
           <Route  path="/Download" component={Download} />
           <Route  path="/About" component={About} />
+          <Route  path="/Search" component={Search} />
         </div>
       </Router>
     );

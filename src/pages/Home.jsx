@@ -1,5 +1,5 @@
     import React,{ Component} from 'react';
-    import { Link } from 'react-router-dom';
+    import { Link , Redirect } from 'react-router-dom';
     import NavBar from '../components/NavBar.jsx';
     import Footer from '../components/Footer.jsx';
 
@@ -27,9 +27,25 @@
           }
 
           _onClick(){
-              alert("Hello, did you click it!")
+           
+            alert("User is No Login!");
+             
+          
           }
 
+          state = {
+            redirect: false
+          }
+          setRedirect = () => {
+            this.setState({
+              redirect: true
+            })
+          }
+          renderRedirect = () => {
+            if (this.state.redirect) {
+              return <Redirect to='/Search' />
+            }
+          }
 
 
         render()
@@ -39,6 +55,7 @@
 
 
                 <div className="home-page">
+                {this.renderRedirect()}
                 <NavBar />
                    <div className="container-fluid  bebello-body">
                         <div  className="container">
@@ -52,11 +69,16 @@
                                                 <input className="input-search" placeholder="Search phone number or Email . . ." type="text" value={this.state.value} onChange={this.handleChange} />
                                             </div>
                                             
-                                            <div onClick={this._onClick.bind(this)} className="p-right">
+                                            {/* <div onClick={this.setRedirect} className="p-right">
                                                 <i className="fa fa-search"></i>
-                                            </div>
-                                        </div>
+                                            </div> */}
 
+                                                <Link onClick={this._onClick.bind(this)} to={"/Search"} className="p-right">
+                                                <i className="fa fa-search"></i>
+                                            </Link>
+                                            
+                                        </div>
+                                    <div style={{width:'100%', height:'200px'}}></div>
                                </div>
                             </div>
                         </div>

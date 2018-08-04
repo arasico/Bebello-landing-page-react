@@ -34,6 +34,7 @@
     display: block;
     padding: .5rem 1rem;
     text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 
 }
 
@@ -47,12 +48,16 @@
     font-weight: 700;
     padding: .5rem 1rem!important;
     color: #0090CF!important;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 .nav-link:hover{
-    border-bottom: 2px solid #0090CF;
+    /* border-bottom: 1px solid #0090CF; */
+    color: #333333!important;
+
 }
 
 .active{
     border-bottom: 2px solid #0090CF;
+    border-radius: 10px;
 }
