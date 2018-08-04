@@ -1,0 +1,82 @@
+.bebello-body{
+    background-color: #0090CF;
+    color: #fff;
+    padding: 3rem;
+
+}
+
+.title-home{
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+
+}
+.auto-center{
+    margin: auto;
+
+}
+
+.txt-search-box{ 
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 200px;
+    
+
+}
+
+.input-search{
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding: 0 10px;
+
+
+}
+
+.p-left{
+    padding: 1rem;
+    height: 50px;
+    width: 15%; 
+    margin: 2px;
+    border-radius: 10px;
+    text-align: center;
+    color: #0090CF;
+    font-weight: 700;
+    font-size: 1em;
+}
+.p-center{
+    height: 50px;
+    width: 75%;
+    background-color: rgb(29, 201, 106);
+    margin: 2px;
+}
+.p-right{
+    padding: 1rem;
+    height: 50px;
+    width: 10%;
+    color: #B9B9B9;
+    margin: 2px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.p-right:hover{
+    color: #0090CF;  
+}
+ 
+.get-app{
+    padding: 1rem;
+    
+}
+
+.get-Info{
+    
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 20px;
+}

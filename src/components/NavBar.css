@@ -1,0 +1,27 @@
+.bnt-circle{
+    border-radius: 25px;
+    padding: 2px 2rem;
+    color: #fff;
+    font-weight: 50;
+}
+
+.bebello-logo{
+    background-image: url('../images/logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150px, 200px;
+    width: 170px;
+    height: 92px;
+    
+}
+.bg-fff{
+    background-color: #fff;
+
+}
+
+.cloud{
+    background-image: url('../images/bebello-cloud.png'), linear-gradient(#fff, #0090CF);
+    padding: 5rem;
+    background-position: center;
+    background-size: cover !important;
+}
