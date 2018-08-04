@@ -18,8 +18,11 @@ class NavBar extends Component{
                 </button>
                 <div className="collapse navbar-collapse  justify-content-end" id="navbarNav">
                     <ul className="navbar-nav">
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/Home">Home</Link>
+                    </li>
                     <li className="nav-item active">
-                        <Link className="nav-link" to="/Home">Bebello <span className="sr-only">(current)</span></Link>
+                        <Link className="nav-link" to="/Bebello">Bebello <span className="sr-only">(current)</span></Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link" to="/Download">Download App</Link>

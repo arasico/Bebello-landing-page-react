@@ -25,16 +25,12 @@
 
 }
 
- .auto-margin{
-     margin: auto;
-     padding: 0;
-     text-align: center;
-
- }
 
  .fa-styleing{
     color: #333333;
     float: left;
+    font-size: 22px;
+
  }
 
 .download-box{
