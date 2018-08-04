@@ -16,7 +16,15 @@ class Download extends Component {
                        <div className="container">
                             <div class="card">
                                 <div class="card-body">
-                                    Welcome to Download Component
+                                   <p> Welcome to Download Component</p>
+                                   <p> Welcome to Download Component</p>
+                                   <p> Welcome to Download Component</p>
+                                   <p> Welcome to Download Component</p>
+                                   <p> Welcome to Download Component</p>
+                                   <p> Welcome to Download Component</p>
+                                   <p> Welcome to Download Component</p>
+                                   <p> Welcome to Download Component</p>
+                                   <p> Welcome to Download Component</p>
                                 </div>
                             </div>
                        </div>

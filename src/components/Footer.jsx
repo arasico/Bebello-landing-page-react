@@ -41,7 +41,19 @@ class Footer extends Component{
                             </div>
                         </div>
                         <div className="col-lg-6 ">
-                        <h2>Footer right part TODO</h2>
+                            <div className="row ">
+                                <div className="col-lg-8 pp ">
+                                    <div className="pxt"><i className="fas fa-globe-americas fa-3x"></i></div>
+                                    
+                                                <button className="btn  dropdown-toggle pyt" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Language : English
+                                                </button>
+                                                <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a className="dropdown-item" href="#">English</a>
+                                                    <a className="dropdown-item" href="#">Farsi</a>
+                                                </div>
+                                    </div>
+                            </div>
                         </div>
                     </div>
                 </div>
