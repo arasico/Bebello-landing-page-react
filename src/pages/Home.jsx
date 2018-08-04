@@ -33,21 +33,12 @@
 
 
                 <div>
-                <NavBar/>
+                <NavBar />
                    <div className="container-fluid  bebello-body">
-                        <div id="IdCaller" class="container">
-                            <div class="row">
+                        <div  className="container">
+                            <div className="row">
                                <div className="col-lg-7 col-md-12 auto-center">
                                  <p className="title-home">Look up a phone number</p>
-
-                                       {/* <form onSubmit={this.handleSubmit}>
-                                            <label>
-                                            <input className="input-search" type="text" value={this.state.value} onChange={this.handleChange} />
-                                            </label>
-                                            <input type="submit" value="Submit" />
-                                        </form> */}
-
-
                                         <div className="txt-search-box">
                                             <div className="p-left"><span>IR +98</span> </div>
 
@@ -56,7 +47,7 @@
                                             </div>
                                             
                                             <div className="p-right">
-                                                <i class="fa fa-search"></i>
+                                                <i className="fa fa-search"></i>
                                             </div>
                                         </div>
 
@@ -66,17 +57,16 @@
                    </div>
 
 
-                   <div id="getApp" className="container get-app">
+                   <div className="container get-app">
                         <div className="row">
-                        <div className="col-lg-6">
-                        <span className="get-Info">
-                            <p>Get Bebello</p>
-                            <p>on your</p>
-                            <p>phone.</p>
-                        </span>
-                       
-                        </div>
-                        <div className="col-lg-6"></div>
+                            <div className="col-lg-6">
+                                <span className="get-Info">
+                                    <p>Get Bebello</p>
+                                    <p>on your</p>
+                                    <p>phone.</p>
+                                </span>
+                            </div>
+                            <div className="col-lg-6"></div>
                         </div>                  
 
                    </div>
