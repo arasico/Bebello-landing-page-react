@@ -50,8 +50,8 @@ class Footer extends Component{
                                                 Language : English
                                                 </button>
                                                 <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                    <a className="dropdown-item" href="#">English</a>
-                                                    <a className="dropdown-item" href="#">Farsi</a>
+                                                    <a className="dropdown-item" to="#">English</a>
+                                                    <a className="dropdown-item" to="#">Farsi</a>
                                                 </div>
                                     </div>
                             </div>

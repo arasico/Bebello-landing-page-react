@@ -28,10 +28,10 @@ class Download extends Component {
                            <div className="row ">
                                 <div className="col-lg-8 auto-center">
                                     <div className="row">
-                                        <div className="col-6">
+                                        <div className="col-lg-6 col-md-6 col-sm-12">
                                             <Link  to="Download" className="btn-home btn-download "><i className="fab fa-apple  fa-styleing"></i> Download IOS</Link>
                                         </div>
-                                        <div className="col-6">
+                                        <div className="col-lg-6 col-md-6 col-sm-12">
                                             <Link  to="#" className="btn-home btn-download  "><i className="fab fa-android  fa-styleing"></i> Download Android</Link>
                                         </div>
                                     </div>

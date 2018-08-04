@@ -1,5 +1,4 @@
-    import React,{ Component} from 'react';
-    import { Link } from 'react-router-dom';
+    import React,{ Component} from 'react'; 
     import NavBar from '../components/NavBar.jsx';
     import Footer from '../components/Footer.jsx';
 
@@ -35,7 +34,7 @@
                             <p>We are committed to building that. No matter if it is in the middle of a transaction.</p>
 
                             <p>And we're just getting started.</p>
-                            <p> <img className="img-boxing" src ={bebellologo} /></p>
+                            <p> <img className="img-boxing img-fluid" alt="Bebello" src ={bebellologo} /></p>
                         </div>
                    </div>
 
@@ -60,7 +59,7 @@
                                     </div>
                             </div>
                             <div className="col-lg-6 col-sm-12">
-                                <img className="img-boxing" src ={mobilePhoto} />
+                                <img className="img-boxing img-fluid" alt="Bebello" src ={mobilePhoto} />
                             </div>
                         </div>
             

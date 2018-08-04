@@ -26,6 +26,10 @@
             event.preventDefault();
           }
 
+          _onClick(){
+              alert("Hello, did you click it!")
+          }
+
 
 
         render()
@@ -48,7 +52,7 @@
                                                 <input className="input-search" placeholder="Search phone number or Email . . ." type="text" value={this.state.value} onChange={this.handleChange} />
                                             </div>
                                             
-                                            <div className="p-right">
+                                            <div onClick={this._onClick.bind(this)} className="p-right">
                                                 <i className="fa fa-search"></i>
                                             </div>
                                         </div>
@@ -61,7 +65,7 @@
 
                    <div className="container get-app">
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="col-lg-6 col-sm-12">
                                 <span className="get-Info">
                                     <p>Get <span className="bebello-logo-type">Bebello</span> </p>
                                     <p>on your</p>
@@ -69,16 +73,16 @@
                                 </span>
                                 <p className="text-decor">The best caller ID and block for all your calls and SMS.</p>
                                 <div className="row">
-                                    <div className="col-6">
+                                    <div className="col-lg-6 col-md-5 col-sm-10">
                                         <Link  to="Download" className="btn-home btn-download">Download App</Link>
                                     </div>
-                                    <div className="col-6">
+                                    <div className="col-lg-6 col-md-5 col-sm-10">
                                         <Link  to="#" className="btn-home btn-black">Know More</Link>
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-6">
-                                <img className="mobile-app" src ={mobilePhoto} />
+                            <div className="col-lg-6 col-sm-12">
+                                <img className="mobile-app img-fluid" alt="Bebello" src ={mobilePhoto} />
                             </div>
                         </div>  
 
