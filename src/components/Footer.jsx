@@ -8,6 +8,7 @@ class Footer extends Component{
         return(
 
                 <div className="footer">
+                  <div className="cloud-dark"></div>         
                                 <div className="Footer-bebello container-fluid">
                 <div className="container">
                     <div className=" row">

@@ -85,7 +85,7 @@
                               
 
                    </div>
-                   <div className="cloud-dark"></div>         
+                 
                 <Footer />
             </div>
             );
