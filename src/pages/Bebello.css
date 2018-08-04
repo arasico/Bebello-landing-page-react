@@ -1,0 +1,32 @@
+
+
+
+.bg-caller{
+    color: #333333;
+    background-image: url('../images/bebello-caller.png');
+    padding: 5rem;
+    background-position: center;
+    background-size: contain !important;
+}
+
+.next-ssection{
+    padding: 5rem;
+
+}
+
+.p-down{
+    padding-top: 5rem;
+}
+
+.img-boxing{
+
+    width: 400px;
+
+}
+
+.platform-style{
+    color: #333333;
+    font-size: 40px;
+    padding: 1rem;
+    
+}

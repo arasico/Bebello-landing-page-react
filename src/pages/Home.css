@@ -127,6 +127,7 @@ textarea:focus, input:focus{
 .mobile-app{
     position: absolute;
     margin-top: -220px;
+    width: 570px;
 }
 
 .btn-home{

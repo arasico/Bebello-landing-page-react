@@ -6,6 +6,7 @@ import './App.css';
 import Home from './pages/Home.jsx';
 import Download from './pages/DownloadApp.jsx';
 import About from './pages/AboutUs.jsx';
+import Bebello from './pages/Bebello.jsx';
 
 
 class App extends Component {
@@ -17,6 +18,7 @@ class App extends Component {
   
           <Route exact path="/" component={Home} />
           <Route  path="/Home" component={Home} />
+          <Route  path="/Bebello" component={Bebello} />
           <Route  path="/Download" component={Download} />
           <Route  path="/About" component={About} />
         </div>
