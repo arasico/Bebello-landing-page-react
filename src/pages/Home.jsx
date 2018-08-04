@@ -1,8 +1,10 @@
     import React,{ Component} from 'react';
+    import { Link } from 'react-router-dom';
     import NavBar from '../components/NavBar.jsx';
     import Footer from '../components/Footer.jsx';
 
     import './Home.css';
+    import mobilePhoto from '../images/app.png'
 
 
     class Home extends Component {
@@ -32,7 +34,7 @@
             return(
 
 
-                <div>
+                <div className="home-page">
                 <NavBar />
                    <div className="container-fluid  bebello-body">
                         <div  className="container">
@@ -61,12 +63,23 @@
                         <div className="row">
                             <div className="col-lg-6">
                                 <span className="get-Info">
-                                    <p>Get Bebello</p>
+                                    <p>Get <span className="bebello-logo-type">Bebello</span> </p>
                                     <p>on your</p>
                                     <p>phone.</p>
                                 </span>
+                                <p className="text-decor">The best caller ID and block for all your calls and SMS.</p>
+                                <div className="row">
+                                    <div className="col-6">
+                                        <Link  to="#" class="btn-home btn-download">Download App</Link>
+                                    </div>
+                                    <div className="col-6">
+                                        <Link  to="#" class="btn-home btn-black">Know More</Link>
+                                    </div>
+                                </div>
                             </div>
-                            <div className="col-lg-6"></div>
+                            <div className="col-lg-6">
+                                <img className="mobile-app" src ={mobilePhoto} />
+                            </div>
                         </div>                  
 
                    </div>
