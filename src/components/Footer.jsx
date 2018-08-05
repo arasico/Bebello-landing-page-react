@@ -19,6 +19,7 @@ class Footer extends Component{
                                         <li className="footer-item-header">PRODUCT</li>
                                         <li> <Link className="footer-item" to="#">Get the app</Link></li>
                                         <li> <Link className="footer-item" to="#">Support</Link></li>
+                                        <li> <Link className="footer-item" to="#">API</Link></li>
                                     </ul>
                                 </div>
                                 

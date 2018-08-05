@@ -4,11 +4,20 @@ import NavBar from '../components/NavBar.jsx';
 import Footer from '../components/Footer.jsx';
 
 import './DownloadApp.css';
+ 
 
 class Download extends Component {
 
+ 
+        
+    
+
     render()
     {
+
+
+     
+
 
         return(
 
@@ -24,6 +33,9 @@ class Download extends Component {
                                 <h1 className="download-title">Call people not numbers</h1>
                                 <h4>Replace unknown numbers in your call history with names and photos and see if your friends are busy before you call.</h4>
                             </div>
+ 
+
+
 
                            <div className="row ">
                                 <div className="col-lg-8 auto-center">

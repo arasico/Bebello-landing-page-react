@@ -8,6 +8,7 @@ import Download from './pages/DownloadApp.jsx';
 import About from './pages/AboutUs.jsx';
 import Bebello from './pages/Bebello.jsx';
 import Search from './pages/Search.jsx';
+import crosel from './pages/crosel.jsx';
 
 
 class App extends Component {
@@ -23,6 +24,7 @@ class App extends Component {
           <Route  path="/Download" component={Download} />
           <Route  path="/About" component={About} />
           <Route  path="/Search" component={Search} />
+          <Route  path="/crosel" component={crosel} />
         </div>
       </Router>
     );
