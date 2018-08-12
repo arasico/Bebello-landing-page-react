@@ -1,9 +1,8 @@
 import React,{ Component} from 'react';
 import { Link } from "react-router-dom";
 import NavBar from '../components/NavBar.jsx';
-import Footer from '../components/Footer.jsx';
+import Footer from '../components/Footer.jsx'; 
 
-import './DownloadApp.css';
  
 
 class Download extends Component {
@@ -16,16 +15,24 @@ class Download extends Component {
     {
 
 
-     
+
+ 
 
 
         return(
 
 
                 <div>
+
+
                     <NavBar/>
                        <div className="container-fluid bebello-body">
-                            <div className="slider"> </div>
+                            
+                       
+                             <img src={require('./img/app.png')} width="400" alt=""/>
+                     
+                             
+                         
                        </div>
 
                        <div className="container download-box">
