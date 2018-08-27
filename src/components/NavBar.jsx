@@ -83,17 +83,19 @@ class NavBar extends Component {
 
                                     <div className="btn-group">
                                         <button className="btn btn-secondary btn-lg  " type="button" >
-                                            Login with Google account
+
+                                            <GoogleLogin
+                                                clientId="216093130728-olt3njcgfb2co0e5fflmdg66dvlukhv3.apps.googleusercontent.com"
+                                                buttonText="Login google"
+                                                onSuccess={responseGoogle}
+                                                onFailure={responseGoogle}
+                                            />
+
                                         </button>
                                     </div>
 
 
-                                    <GoogleLogin
-                                        clientId="216093130728-olt3njcgfb2co0e5fflmdg66dvlukhv3.apps.googleusercontent.com"
-                                        buttonText="Login google"
-                                        onSuccess={responseGoogle}
-                                        onFailure={responseGoogle}
-                                    />,
+
 
                                 </Modal>
                             </li>
