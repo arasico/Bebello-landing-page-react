@@ -24,7 +24,7 @@ class App extends Component {
           <Route  path="/Download" component={Download} />
           <Route  path="/About" component={About} />
           <Route  path="/Search" component={Search} />
-          <Route  path="/crosel" component={crosel} />
+
         </div>
       </Router>
     );
