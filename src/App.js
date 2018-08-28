@@ -8,7 +8,7 @@ import Download from './pages/DownloadApp.jsx';
 import About from './pages/AboutUs.jsx';
 import Bebello from './pages/Bebello.jsx';
 import Search from './pages/Search.jsx';
-import crosel from './pages/crosel.jsx';
+// import crosel from './pages/crosel.jsx';
 
 
 class App extends Component {
