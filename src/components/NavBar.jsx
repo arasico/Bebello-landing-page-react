@@ -11,6 +11,8 @@ const customStyles = {
         marginLeft: '10%',
         marginRight: '10%',
         borderRadius:15,
+        color:'#fcfcfc',
+
     }
 };
 
