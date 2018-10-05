@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "google-contacts": "^0.1.5",
     "nuka-carousel": "^4.3.5",
     "react": "^16.4.2",
     "react-animated-slider": "^1.1.3",

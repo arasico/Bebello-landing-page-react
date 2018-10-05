@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import Modal from 'react-modal';
 import GoogleLogin from 'react-google-login';
+import GoogleContacts from 'google-contacts';
+
 
 import './NavBar.css';
 
@@ -41,8 +43,12 @@ class NavBar extends Component {
 
 
         const responseGoogle = (response) => {
-
-            console.log(response);
+            let c = new GoogleContacts({
+                token: '216093130728-olt3njcgfb2co0e5fflmdg66dvlukhv3.apps.googleusercontent.com'
+              });
+               
+            //console.log(c.getContacts(cb, params));
+            console.log(response.tokenId);
         }
 
 
