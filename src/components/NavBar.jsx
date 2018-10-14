@@ -3,7 +3,7 @@ import {Link, NavLink} from 'react-router-dom';
 import Modal from 'react-modal';
 import GoogleLogin from 'react-google-login';
 import GoogleContacts from 'google-contacts';
-
+ 
 
 import './NavBar.css';
 
@@ -93,11 +93,13 @@ class NavBar extends Component {
                                         <button className="btn btn-secondary btn-lg  " type="button" >
 
                                             <GoogleLogin
-                                                clientId="216093130728-olt3njcgfb2co0e5fflmdg66dvlukhv3.apps.googleusercontent.com"
-                                                buttonText="Login google"
+                                                clientId={'658977310896-knrl3gka66fldh83dao2rhgbblmd4un9.apps.googleusercontent.com'}
                                                 onSuccess={responseGoogle}
                                                 onFailure={responseGoogle}
-                                            />
+                                            >
+                                                <i className="fab fa-google   "></i>
+                                                <span> Login with Google</span>
+                                            </GoogleLogin>
 
                                         </button>
                                     </div>

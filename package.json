@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "google-contacts": "^0.1.5",
+    "i": "^0.3.6",
+    "npm": "^6.4.1",
     "nuka-carousel": "^4.3.5",
     "react": "^16.4.2",
     "react-animated-slider": "^1.1.3",
