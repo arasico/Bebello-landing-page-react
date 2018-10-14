@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
+import {Link, NavLink} from 'react-router-dom';
 import Modal from 'react-modal';
 import GoogleLogin from 'react-google-login';
 import GoogleContacts from 'google-contacts';
@@ -66,27 +66,27 @@ class NavBar extends Component {
                     <div className="collapse navbar-collapse  justify-content-end" id="navbarNav">
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <Link className="nav-link" to={"/Home"} activeClassName={"active"}>Home</Link>
+                                <NavLink className="nav-link" to={"/Home"} activeClassName={"active"}>Home</NavLink>
                             </li>
                             <li className="nav-item ">
-                                <Link className="nav-link" to={"/Bebello"} activeClassName={"active"}>Bebello </Link>
+                                <NavLink className="nav-link" to={"/Bebello"} activeClassName={"active"}>Bebello </NavLink>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to={"/Download"} activeClassName={"active"}>Download
-                                    App</Link>
+                                <NavLink className="nav-link" to={"/Download"} activeClassName={"active"}>Download
+                                    App</NavLink>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to={"/SignIn"} activeClassName={"active"}>Sign in</Link>
+                                <NavLink className="nav-link" to={"/SignIn"} activeClassName={"active"}>Sign in</NavLink>
                             </li>
                             <li className="nav-item bnt-circle btn-primary">
                                 <span onClick={this.toggleModal}>SignUp</span>
-                                <Modal isOpen={this.state.isActive} style={customStyles}
-                                       onRequestClose={this.toggleModal}>
+                                    <Modal isOpen={this.state.isActive} style={customStyles}
+                                        onRequestClose={this.toggleModal}>
 
 
-                                    <button onClick={this.toggleModal} type="button" className="close" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
+                                        <button onClick={this.toggleModal} type="button" className="close" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
                                     <h3>Sign in / Sign up</h3>
 
                                     <div className="btn-group">
@@ -105,7 +105,7 @@ class NavBar extends Component {
 
 
 
-                                </Modal>
+                                        </Modal>
                             </li>
 
 

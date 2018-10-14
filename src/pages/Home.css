@@ -143,9 +143,9 @@ textarea:focus, input:focus{
     -ms-user-select: none;
     user-select: none;
     border: 1px solid transparent;
-    padding: 0.6rem  3rem;
+    padding: 0.6rem  4rem;
     font-size: 1rem;
-    line-height: 1.5;
+    line-height: 1.7;
     border-radius: 50px;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
@@ -154,7 +154,7 @@ textarea:focus, input:focus{
     text-decoration: none;
     background-color: #6FCF97;
     color: #000;
-    margin: 20px 0;
+    margin: 20px 0; 
 
 }
 
