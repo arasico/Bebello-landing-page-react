@@ -1,11 +1,18 @@
 .bnt-circle{
-    background-color: #0090CF!important;
+    /* background-color: #0090CF!important;
     border-radius: 25px;
     padding: 0.5rem 2rem;
     color: #fff!important;
     font-weight: 50;
     text-align: center;
-    margin: 0 10px;
+    margin: 0 10px; */
+
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
 }
 
 .bebello-logo{
@@ -15,6 +22,26 @@
     background-size: 150px, 200px;
     width: 170px;
     height: 92px;
+    
+}
+
+.btn-primary i {
+    font-size: 25px; 
+    padding: 0 10px;
+
+}
+.btn-primary span {
+  padding: 10px 5px;
+  font-size: 16px;
+  font-weight: 700;
+
+
+
+}
+
+.btn-primary {
+    cursor: pointer;
+    padding: 10px;
     
 }
 .bg-fff{

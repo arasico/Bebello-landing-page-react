@@ -24,24 +24,45 @@ class NavBar extends Component {
     constructor() {
         super()
         this.state = {
-            isActive: false
+            isActive: false,
+            appToken : localStorage.getItem('@appTokenBebello'),
+            username: localStorage.getItem('@username')
         }
     }
 
     componentWillMount() {
         Modal.setAppElement('body');
     }
-    
+
     toggleModal = () => {
         this.setState({
             isActive: !this.state.isActive
         })
     }
 
+    componentDidMount() {
+        console.log(this.state.appToken)
+    }
+
+
+    setItemInlocalStorage = async(key,value) => {
+        await  localStorage.setItem(key,value)
+        // await  localStorage.removeItem("@appTokenAgency")
+
+    }
+
+    logOut = async() => {
+        localStorage.removeItem('@appTokenBebello')
+        localStorage.removeItem('@username');
+        window.location.reload();
+        
+    }
+
+
     render() {
 
 
-        const responseGoogle = (response) => {
+        const responseGoogle = async(response) => {
             // let c = new GoogleContacts({
             //     token: response
             //   });
@@ -51,7 +72,16 @@ class NavBar extends Component {
             console.log(response); 
             console.log(response.w3.ig); 
 
+            if(response.tokenId){ 
+               await this.setItemInlocalStorage("@appTokenBebello" , response.tokenId);
+               await this.setItemInlocalStorage("@username" , response.w3.ig);
+               window.location.reload();
+            } else{
+                alert("login faild")
+            }
+
         }
+
 
 
         return (
@@ -77,19 +107,31 @@ class NavBar extends Component {
                                 <NavLink className="nav-link" to={"/Download"} activeClassName={"active"}>Download
                                     App</NavLink>
                             </li>
-                            <li className="nav-item bnt-circle btn-primary">
+                            {this.state.appToken === null ? 
+                                                        <li className="nav-item bnt-circle btn-primary">
 
-                                 <GoogleLogin
-                                    clientId="112770834425-t5i24lm3rif131rqrin24fns7eqjjp0j.apps.googleusercontent.com"
-                                    render={renderProps => (
-                                    <div onClick={renderProps.onClick} disabled={renderProps.disabled}>sign in with google account</div>
-                                    )}
-                                    buttonText="Login"
-                                    onSuccess={responseGoogle}
-                                    onFailure={responseGoogle}
-                                    cookiePolicy={'single_host_origin'}
-                                />
-                            </li>
+                                                        <GoogleLogin
+                                                           clientId="112770834425-t5i24lm3rif131rqrin24fns7eqjjp0j.apps.googleusercontent.com"
+                                                           render={renderProps => (
+                                                           <div onClick={renderProps.onClick} disabled={renderProps.disabled}>
+                                                               <i class="fab fa-google"></i>
+                                                              <span> Sign in Google Accounts</span>
+                                                           </div>
+                                                           )}
+                                                           buttonText="Login"
+                                                           onSuccess={responseGoogle}
+                                                           onFailure={responseGoogle}
+                                                           cookiePolicy={'single_host_origin'}
+                                                       />
+                                                   </li>
+                            : 
+                                <li className="nav-item bnt-circle btn-primary">
+                                    <div onClick={this.logOut} >
+                                        <span> Hi, {this.state.username}</span>
+                                        <i class="far fa-user"></i>
+                                    </div>
+                                </li>
+                            }
                     
 
                         </ul>
