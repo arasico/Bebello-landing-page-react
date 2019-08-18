@@ -31,7 +31,7 @@ class NavBar extends Component {
     }
 
     componentWillMount() {
-        Modal.setAppElement('body');
+        Modal.setAppElement('body'); 
     }
 
     toggleModal = () => {
@@ -41,13 +41,12 @@ class NavBar extends Component {
     }
 
     componentDidMount() {
-        console.log(this.state.appToken)
+        // console.log(this.state.appToken) 
     }
 
 
     setItemInlocalStorage = async(key,value) => {
-        await  localStorage.setItem(key,value)
-        // await  localStorage.removeItem("@appTokenAgency")
+        await  localStorage.setItem(key,value) 
 
     }
 
@@ -58,6 +57,7 @@ class NavBar extends Component {
         
     }
 
+     
 
     render() {
 
@@ -70,7 +70,7 @@ class NavBar extends Component {
             //console.log(c.getContacts(cb, params));
             console.log(response.tokenId);
             console.log(response); 
-            console.log(response.w3.ig); 
+            // console.log(response.w3.ig); 
 
             if(response.tokenId){ 
                await this.setItemInlocalStorage("@appTokenBebello" , response.tokenId);
@@ -111,10 +111,14 @@ class NavBar extends Component {
                                                         <li className="nav-item bnt-circle btn-primary">
 
                                                         <GoogleLogin
-                                                           clientId="112770834425-t5i24lm3rif131rqrin24fns7eqjjp0j.apps.googleusercontent.com"
+                                                        // local host client Id --->
+                                                        //    clientId="112770834425-t5i24lm3rif131rqrin24fns7eqjjp0j.apps.googleusercontent.com"
+                                                           // production client Id --->
+                                                        //    clientId="112770834425-qhnrgd0skump14pjgfa5i97lpoqjsasc.apps.googleusercontent.com"
+                                                           clientId={window.location.hostname === 'localhost' ? '112770834425-t5i24lm3rif131rqrin24fns7eqjjp0j.apps.googleusercontent.com' : '112770834425-qhnrgd0skump14pjgfa5i97lpoqjsasc.apps.googleusercontent.com'}
                                                            render={renderProps => (
                                                            <div onClick={renderProps.onClick} disabled={renderProps.disabled}>
-                                                               <i class="fab fa-google"></i>
+                                                               <i className="fab fa-google"></i>
                                                               <span> Sign in Google Accounts</span>
                                                            </div>
                                                            )}
@@ -128,7 +132,7 @@ class NavBar extends Component {
                                 <li className="nav-item bnt-circle btn-primary">
                                     <div onClick={this.logOut} >
                                         <span> Hi, {this.state.username}</span>
-                                        <i class="far fa-user"></i>
+                                        <i className="far fa-user"></i>
                                     </div>
                                 </li>
                             }

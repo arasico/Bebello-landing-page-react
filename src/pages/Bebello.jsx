@@ -52,10 +52,10 @@
                                     </ul>
                                    <p> <h2><b>Bebello work on:</b> </h2></p>
                                     <div className="platform-style">
-                                        <span className="p-4"><i class="fab fa-apple"></i></span>
-                                        <span className="p-4"><i class="fab fa-android"></i></span>
-                                        <span className="p-4"><i class="fab fa-windows"></i></span>
-                                        <span className="p-4"><i class="fab fa-linux"></i></span>
+                                        <span className="p-4"><i className="fab fa-apple"></i></span>
+                                        <span className="p-4"><i className="fab fa-android"></i></span>
+                                        <span className="p-4"><i className="fab fa-windows"></i></span>
+                                        <span className="p-4"><i className="fab fa-linux"></i></span>
                                     </div>
                             </div>
                             <div className="col-lg-6 col-sm-12">

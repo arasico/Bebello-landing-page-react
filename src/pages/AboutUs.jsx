@@ -13,8 +13,8 @@ class AboutUs extends Component {
             <div>
             <NavBar/>
                <div className="container">
-                    <div class="card">
-                        <div class="card-body">
+                    <div className="card">
+                        <div className="card-body">
                             Welcome to About Component
                         </div>
                     </div>

@@ -2,16 +2,22 @@
     import { Link } from 'react-router-dom';
     import NavBar from '../components/NavBar.jsx';
     import Footer from '../components/Footer.jsx';
-
     import './Search.css'; 
+    import GoogleLoginComponent from '../components/googleLoginComponent/googleLoginComponent.jsx';
 
 
     class Search extends Component {
  
         constructor(props) {
             super(props);
-            this.state = {value: ''};
-        
+            this.state = {
+                value: '',
+                appToken : localStorage.getItem('@appTokenBebello'),
+                username: localStorage.getItem('@username'),
+                isNotLogin: false,
+                isFind: false
+            };
+            
             this.handleChange = this.handleChange.bind(this);
             this.handleSubmit = this.handleSubmit.bind(this);
           }
@@ -26,14 +32,35 @@
           }
 
           _onClick(){
-              alert("Hello, did you click it!")
+              if(this.state.appToken !== null){
+                  this.setState({
+                      isFind : true
+                  })
+              } else {
+                  this.setState({
+                      isNotLogin: true
+                  })
+              }
           }
 
 
 
-        render()
-        {
+        render() {
 
+            const NotLogin =(
+                <div className="no-login">
+                                    <p><h2>You need to sign in to view this result!</h2></p>
+                                    <div className="auto-center col-lg-4 col-sm-11">
+                                       <GoogleLoginComponent />
+                                    </div>
+                </div>
+            )
+
+            const MyResualt = (
+                <div className="resualt-container">
+                    <p>My resulat</p>
+                </div>
+            )
             return(
 
 
@@ -58,12 +85,8 @@
 
                                </div>
 
-                                <div className="no-login">
-                                    <p><h2>You need to sign in to view this result!</h2></p>
-                                    <div className="auto-center col-lg-4 col-sm-11">
-                                        <Link  to="Download" className="btn-home btn-download">Sign in / Sign Up</Link>
-                                    </div>
-                                </div>
+                                 {this.state.isNotLogin === true ? NotLogin : ''}
+                                 {this.state.isFind === true ? MyResualt : ''}
 
 
                             </div>
@@ -77,7 +100,7 @@
 
                               
  
-                              <div className="container download-box">
+                        <div className="container download-box">
                             <div className="section-download">
                                 <h1 className="download-title">Call people not numbers</h1>
                                 <h4>Replace unknown numbers in your call history with names and photos and see if your friends are busy before you call.</h4>
@@ -94,9 +117,7 @@
                                         </div>
                                     </div>
                                 </div>
-                           </div>
-
-
+                           </div> 
                        </div>
                 <Footer />
             </div>

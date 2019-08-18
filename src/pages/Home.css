@@ -157,6 +157,10 @@ textarea:focus, input:focus{
     margin: 20px 0; 
 
 }
+.btn-download i {
+    font-size: 30px;
+    padding: 0 10px;
+}
 
 .btn-download:hover{
 
