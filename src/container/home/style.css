@@ -1,0 +1,199 @@
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    letter-spacing: 1px; 
+    font-size: 16px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    letter-spacing: 1px; 
+    font-size: 16px;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    letter-spacing: 1px; 
+    font-size: 16px;
+}
+
+.home-page{
+    text-decoration: none;
+}
+
+.bebello-body{
+    background-color: #0090CF;
+    color: #fff;
+    padding: 3rem;
+
+}
+
+.title-home{
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+
+}
+.auto-center{
+    margin: auto;
+
+}
+
+.txt-search-box{ 
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0.4rem 0;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    
+
+}
+
+.input-search{
+    width: 100%;
+    height: 100%;
+    border: 0;
+    letter-spacing: 5px;
+    font-size: 30px;
+    padding: 0 10px;
+    color:#333333;
+
+
+
+}
+
+.p-left{
+    padding: 1rem;
+    height: 50px;
+    width: 15%; 
+    margin: 2px;
+    border-radius: 10px;
+    text-align: center;
+    color: #0090CF;
+    font-weight: 700;
+    font-size: 1em;
+}
+.p-center{
+    height: 50px;
+    width: 75%;
+    background-color: rgb(29, 201, 106);
+    margin: 2px;
+}
+.p-right{
+    padding: 1rem;
+    height: 50px;
+    width: 10%;
+    color: #B9B9B9;
+    margin: 2px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.p-right:hover{
+    color: #0090CF;  
+}
+ 
+.get-app{
+    padding-top: 5rem;
+    padding-bottom: 15rem;
+
+}
+
+.get-Info{
+    
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.bebello-logo-type{
+    color: #0090CF;
+    font-size: 40px;
+    font-family: monospace;
+    
+}
+
+.text-decor{
+    padding-top: 10px;
+    color: #686868;
+}
+
+.mobile-app{
+    position: absolute;
+    margin-top: -220px;
+    width: 570px;
+}
+
+.btn-home{
+    width: 100%;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.6rem  4rem;
+    font-size: 1rem;
+    line-height: 1.7;
+    border-radius: 50px;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn-download{
+    text-decoration: none;
+    background-color: #6FCF97;
+    color: #000;
+    margin: 20px 0; 
+
+}
+.btn-download i {
+    font-size: 30px;
+    padding: 0 10px;
+}
+
+.btn-download:hover{
+
+    background-color:  rgb(70, 170, 112);
+    color:#fff;
+    text-decoration: none;
+
+}
+
+
+
+.btn-black{
+    text-align: center;
+    margin: 20px 0;
+    text-decoration: none;
+    background-color: #333333;
+    color: #fff;
+    border: 2px solid #222222;       
+
+}
+
+.btn-black:hover{
+
+    background-color:  #fff;
+    color:#333333;
+    text-decoration: none;
+    border: 2px solid #222222;
+
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .mobile-app, .p-left {
+        display: none;
+    }
+}

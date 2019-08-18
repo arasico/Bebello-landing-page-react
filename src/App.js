@@ -5,7 +5,7 @@ import './App.css';
 
 
 
-import Home from './pages/Home.jsx';
+import HomeScreen from './container/home/homeComponent';
 import Download from './pages/DownloadApp.jsx';
 import About from './pages/AboutUs.jsx';
 import Bebello from './pages/Bebello.jsx';
@@ -20,8 +20,8 @@ class App extends Component {
       <Router>
         <div>
   
-          <Route exact path="/" component={Home} />
-          <Route  path="/Home" component={Home} />
+          <Route exact path="/" component={HomeScreen} />
+          <Route  path="/home" component={HomeScreen} />
           <Route  path="/Bebello" component={Bebello} />
           <Route  path="/Download" component={Download} />
           <Route  path="/About" component={About} />

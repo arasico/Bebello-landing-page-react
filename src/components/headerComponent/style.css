@@ -1,0 +1,93 @@
+.bnt-circle{
+    /* background-color: #0090CF!important;
+    border-radius: 25px;
+    padding: 0.5rem 2rem;
+    color: #fff!important;
+    font-weight: 50;
+    text-align: center;
+    margin: 0 10px; */
+
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.bebello-logo{
+    background-image: url('../images/logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150px, 200px;
+    width: 170px;
+    height: 92px;
+    
+}
+
+.btn-primary i {
+    font-size: 25px; 
+    padding: 0 10px;
+
+}
+.btn-primary span {
+  padding: 10px 5px;
+  font-size: 16px;
+  font-weight: 700;
+
+
+
+}
+
+.btn-primary {
+    cursor: pointer;
+    padding: 10px;
+    
+}
+.bg-fff{
+    background-color: #fff;
+
+}
+
+.cloud{
+    background-image: url('../images/bebello-cloud.png'), linear-gradient(#fff, #0090CF);
+    padding: 5rem;
+    background-position: center;
+    background-size: cover !important;
+}
+
+.nav-link-to{
+    color: #fff;
+    display: block;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+}
+
+.nav-link-to:hover{
+ 
+    text-decoration: none;
+
+}
+
+.nav-link{
+    font-weight: 500;
+    padding: .5rem 1.5rem!important;
+    color: #0090CF!important;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.nav-link:hover{
+    /* border-bottom: 1px solid #0090CF; */
+    color: #333333!important;
+
+}
+
+.active{
+    /* border: 2px solid #0090CF;
+    border-radius: 30px; */
+    color: #333333!important;
+    font-weight: 700;
+
+}
