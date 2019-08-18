@@ -30,9 +30,8 @@ class NavBar extends Component {
 
     componentWillMount() {
         Modal.setAppElement('body');
-
     }
-
+    
     toggleModal = () => {
         this.setState({
             isActive: !this.state.isActive
@@ -78,54 +77,20 @@ class NavBar extends Component {
                                 <NavLink className="nav-link" to={"/Download"} activeClassName={"active"}>Download
                                     App</NavLink>
                             </li>
-                            <li className="nav-item">
-                                <NavLink className="nav-link" to={"/SignIn"} activeClassName={"active"}>Sign in</NavLink>
-                            </li>
                             <li className="nav-item bnt-circle btn-primary">
-                                <span onClick={this.toggleModal}>SignUp</span>
-                                    <Modal isOpen={this.state.isActive} style={customStyles}
-                                        onRequestClose={this.toggleModal}>
 
-
-                                        <button onClick={this.toggleModal} type="button" className="close" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    <h3>Sign in / Sign up</h3>
-
-                                    <div className="btn-group">
-                                        <button className="btn btn-secondary btn-lg  " type="button" >
-                                            <p>ddfdfdfdfdfdf</p>
-                                            {/* <GoogleLogin
-                                                clientId={'658977310896-knrl3gka66fldh83dao2rhgbblmd4un9.apps.googleusercontent.com'}
-                                                onSuccess={responseGoogle}
-                                                onFailure={responseGoogle}
-                                            >
-                                                <i className="fab fa-google   "></i>
-                                                <span> Login with Google</span>
-                                            </GoogleLogin> */}
-
-                                                <GoogleLogin
-                                                    clientId="112770834425-t5i24lm3rif131rqrin24fns7eqjjp0j.apps.googleusercontent.com"
-                                                    render={renderProps => (
-                                                    <button onClick={renderProps.onClick} disabled={renderProps.disabled}>This is my custom Google button</button>
-                                                    )}
-                                                    buttonText="Login"
-                                                    onSuccess={responseGoogle}
-                                                    onFailure={responseGoogle}
-                                                    cookiePolicy={'single_host_origin'}
-                                                />
-
-
-
-                                        </button>
-                                    </div>
-
-
-
-
-                                        </Modal>
+                                 <GoogleLogin
+                                    clientId="112770834425-t5i24lm3rif131rqrin24fns7eqjjp0j.apps.googleusercontent.com"
+                                    render={renderProps => (
+                                    <div onClick={renderProps.onClick} disabled={renderProps.disabled}>sign in with google account</div>
+                                    )}
+                                    buttonText="Login"
+                                    onSuccess={responseGoogle}
+                                    onFailure={responseGoogle}
+                                    cookiePolicy={'single_host_origin'}
+                                />
                             </li>
-
+                    
 
                         </ul>
                     </div>
