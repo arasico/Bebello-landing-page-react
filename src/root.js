@@ -1,8 +1,6 @@
-import React, {Component} from 'react';
-import {browserHistory } from 'react-router'
+import React, {Component} from 'react'; 
 // import Header from "./header/header";
-// import Footer from "./footer/footer";
-import IndexComponent from "./container/beforLogin/inddex/index";
+// import Footer from "./footer/footer"; 
 import HeaderComponent from './components/headerComponent/heaerComponent';
  
  
@@ -20,7 +18,7 @@ export default class Root extends Component {
         return ( 
             <div >
            
-                <HeaderComponent/>
+                <HeaderComponent />
  
                <div className="container-fluid">
                     { this.props.children}

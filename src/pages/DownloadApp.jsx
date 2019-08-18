@@ -1,5 +1,5 @@
 import React,{ Component} from 'react';
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 import NavBar from '../components/NavBar.jsx';
 import Footer from '../components/Footer.jsx'; 
 
@@ -12,12 +12,7 @@ class Download extends Component {
     
 
     render()
-    {
-
-
-
- 
-
+    { 
 
         return(
 

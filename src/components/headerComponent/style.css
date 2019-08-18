@@ -16,7 +16,7 @@
 }
 
 .bebello-logo{
-    background-image: url('../images/logo.png');
+    background-image: url('../../assets/img/logo.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 150px, 200px;
@@ -50,7 +50,7 @@
 }
 
 .cloud{
-    background-image: url('../images/bebello-cloud.png'), linear-gradient(#fff, #0090CF);
+    background-image: url('../../assets/img/bebello-cloud.png'), linear-gradient(#fff, #0090CF);
     padding: 5rem;
     background-position: center;
     background-size: cover !important;

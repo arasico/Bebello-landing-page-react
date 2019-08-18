@@ -1,15 +1,16 @@
-import React, { Component } from 'react';
-import { BrowserRouter as  Router , Route } from 'react-router-dom';
+import React, { Component } from 'react'; 
+import { Router ,  Route , browserHistory , IndexRoute  } from 'react-router';
+
 import './App.css';
  
 
 
-
+import RootComponent from './root';
 import HomeScreen from './container/home/homeComponent';
-import Download from './pages/DownloadApp.jsx';
-import About from './pages/AboutUs.jsx';
-import Bebello from './pages/Bebello.jsx';
-import Search from './pages/Search.jsx';
+// import Download from './pages/DownloadApp.jsx';
+// import About from './pages/AboutUs.jsx';
+// import Bebello from './pages/Bebello.jsx';
+// import Search from './pages/Search.jsx';
 // import crosel from './pages/crosel.jsx';
 
 
@@ -17,17 +18,19 @@ class App extends Component {
   render() {
     return (
  
-      <Router>
-        <div>
+      <Router history={browserHistory}>
+        <Route  component={RootComponent}> 
   
-          <Route exact path="/" component={HomeScreen} />
-          <Route  path="/home" component={HomeScreen} />
+          {/* <Route exact path="/" component={HomeScreen} /> */}
+          <Route  path="/" component={HomeScreen} />
+          {/* <Route  path="/home" component={HomeScreen} />
           <Route  path="/Bebello" component={Bebello} />
           <Route  path="/Download" component={Download} />
           <Route  path="/About" component={About} />
-          <Route  path="/Search" component={Search} />
+          <Route  path="/Search" component={Search} /> */}
 
-        </div>
+        </Route>
+
       </Router>
     );
   }

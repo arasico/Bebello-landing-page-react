@@ -1,5 +1,5 @@
 import React,{ Component} from 'react';
-import { Link , Redirect } from 'react-router-dom'; 
+import { Link  } from 'react-router'; 
 
 import './style.css';
 import mobilePhoto from '../../assets/img/app.png'
