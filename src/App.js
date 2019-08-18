@@ -7,6 +7,7 @@ import './App.css';
 
 import RootComponent from './root';
 import HomeScreen from './container/home/homeComponent';
+import SearchScreen from './container/search/searchComponent';
 // import Download from './pages/DownloadApp.jsx';
 // import About from './pages/AboutUs.jsx';
 // import Bebello from './pages/Bebello.jsx';
@@ -23,6 +24,7 @@ class App extends Component {
   
           {/* <Route exact path="/" component={HomeScreen} /> */}
           <Route  path="/" component={HomeScreen} />
+          <Route  path="/search" component={SearchScreen} />
           {/* <Route  path="/home" component={HomeScreen} />
           <Route  path="/Bebello" component={Bebello} />
           <Route  path="/Download" component={Download} />
