@@ -43,12 +43,15 @@ class NavBar extends Component {
 
 
         const responseGoogle = (response) => {
-            let c = new GoogleContacts({
-                token: '216093130728-olt3njcgfb2co0e5fflmdg66dvlukhv3.apps.googleusercontent.com'
-              });
+            // let c = new GoogleContacts({
+            //     token: response
+            //   });
                
             //console.log(c.getContacts(cb, params));
             console.log(response.tokenId);
+            console.log(response); 
+            console.log(response.w3.ig); 
+
         }
 
 
@@ -102,7 +105,7 @@ class NavBar extends Component {
                                             </GoogleLogin> */}
 
                                                 <GoogleLogin
-                                                    clientId="658977310896-knrl3gka66fldh83dao2rhgbblmd4un9.apps.googleusercontent.com"
+                                                    clientId="112770834425-t5i24lm3rif131rqrin24fns7eqjjp0j.apps.googleusercontent.com"
                                                     render={renderProps => (
                                                     <button onClick={renderProps.onClick} disabled={renderProps.disabled}>This is my custom Google button</button>
                                                     )}
