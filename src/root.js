@@ -20,7 +20,7 @@ export default class Root extends Component {
            
                 <HeaderComponent />
  
-               <div className="container-fluid">
+               <div  >
                     { this.props.children}
                </div>
                    

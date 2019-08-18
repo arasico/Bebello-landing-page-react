@@ -44,10 +44,8 @@ class HomeComponent extends Component {
 
         return(
 
-
-            <div className="home-page">
-          
-               <div className="container-fluid  bebello-body">
+          <div>
+                          <div className="container-fluid  bebello-body">
                     <div  className="container">
                         <div className="row">
                            <div className="col-lg-7 col-md-12 auto-center">
@@ -75,34 +73,34 @@ class HomeComponent extends Component {
                </div>
 
 
-               <div className="container get-app">
-                    <div className="row">
-                        <div className="col-lg-6 col-sm-12">
-                            <span className="get-Info">
-                                <p>Get <span className="bebello-logo-type">Bebello</span> </p>
-                                <p>on your</p>
-                                <p>phone.</p>
-                            </span>
-                            <p className="text-decor">The best caller ID and block for all your calls and SMS.</p>
-                            <div className="row">
-                                <div className="col-lg-6 col-md-5 col-sm-10">
-                                    <Link  to="Download" className="btn-home btn-download">Download App</Link>
-                                </div>
-                                <div className="col-lg-6 col-md-5 col-sm-10">
-                                    <Link  to="#" className="btn-home btn-black">Know More</Link>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-6 col-sm-12">
-                            <img className="mobile-app img-fluid" alt="Bebello" src ={mobilePhoto} />
-                        </div>
-                    </div>  
+                 <div className="container get-app">
+                      <div className="row">
+                          <div className="col-lg-6 col-sm-12">
+                              <span className="get-Info">
+                                  <p>Get <span className="bebello-logo-type">Bebello</span> </p>
+                                  <p>on your</p>
+                                  <p>phone.</p>
+                              </span>
+                              <p className="text-decor">The best caller ID and block for all your calls and SMS.</p>
+                              <div className="row">
+                                  <div className="col-lg-6 col-md-5 col-sm-10">
+                                      <Link  to="Download" className="btn-home btn-download">Download App</Link>
+                                  </div>
+                                  <div className="col-lg-6 col-md-5 col-sm-10">
+                                      <Link  to="#" className="btn-home btn-black">Know More</Link>
+                                  </div>
+                              </div>
+                          </div>
+                          <div className="col-lg-6 col-sm-12">
+                              <img className="mobile-app img-fluid" alt="Bebello" src ={mobilePhoto} />
+                          </div>
+                      </div>  
 
                           
 
-               </div>
-              
-        </div>
+                 </div>
+          </div>
+    
         );
     }
 }
