@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 // import Header from "./header/header";
 // import Footer from "./footer/footer"; 
 import HeaderComponent from './components/headerComponent/heaerComponent';
+import FooterComponent from './components/footerComponent/footerComponent';
  
  
  
@@ -23,7 +24,7 @@ export default class Root extends Component {
                <div  >
                     { this.props.children}
                </div>
-                   
+                <FooterComponent />
                 
              
               

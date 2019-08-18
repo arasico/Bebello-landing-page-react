@@ -1,0 +1,92 @@
+.footer { 
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white; 
+ }
+
+.Footer-bebello{
+ background-color: #004877;
+ padding: 4rem 0;
+}
+
+.footer-bar{
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.footer-item-header{
+    font-size: 16px;
+    color: #fff;
+    padding-bottom: 1rem;
+    padding-top: 0.5rem;
+}
+
+.footer-item{
+    color: #C8C8C8;
+    text-decoration-style: none;
+    font-size: 14px;
+}
+
+.under-footer{
+    background-color: #013D64;
+    padding: 1rem;
+    color: #BDBDBD;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.heart-red{
+    color: #E74C3C;
+}
+
+
+.pp{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align:right; 
+    margin:0px auto 0px auto;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    padding: 0.5rem;
+
+
+}
+.pxt{
+    width: 50px;
+    height: 50px;
+    margin: 1px;
+}
+
+.pyt{
+    width: 100%;
+    background-color: transparent;
+    height: 100%;
+    color: #fff;
+    padding: 0 1rem;
+
+}
+
+.cloud-dark{
+    background-image: url('../../assets/img/bebello-cloud.png'), linear-gradient(#fff, #004877);
+    padding: 5rem;
+    background-position: center;
+    background-size: cover !important;
+}
+
+
+
+button:focus, button:active{
+   outline: 0!important;
+   text-decoration: none!important; 
+   border: none!important;
+
+
+
+
+}
