@@ -3,7 +3,7 @@
 
 .bg-caller{
     color: #333333;
-    background-image: url('../images/bebello-caller.png');
+    background-image: url('../../assets/img/bebello-caller.png');
     padding: 5rem;
     background-position: center;
     background-size: contain !important;

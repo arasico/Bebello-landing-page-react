@@ -1,29 +1,25 @@
-import React,{ Component} from 'react';
-import NavBar from '../components/NavBar.jsx';
-import Footer from '../components/Footer.jsx';
+import React,{ Component} from 'react'; 
+import './style.css';
 
 
-class AboutUs extends Component {
+class AboutUsComponent extends Component {
 
     render()
-    {
-
+    { 
         return(
 
-            <div>
-            <NavBar/>
+            <div> 
                <div className="container">
                     <div className="card">
                         <div className="card-body">
                             Welcome to About Component
                         </div>
                     </div>
-               </div>
-            <Footer />
+               </div> 
         </div>
         );
     }
 }
 
 
-export default AboutUs;
+export default AboutUsComponent;

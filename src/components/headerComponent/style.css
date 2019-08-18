@@ -16,7 +16,7 @@
 }
 
 .bebello-logo{
-    background-image: url('../images/logo.png');
+    background-image: url('../../assets/img/logo.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 150px, 200px;
@@ -50,7 +50,7 @@
 }
 
 .cloud{
-    background-image: url('../images/bebello-cloud.png'), linear-gradient(#fff, #0090CF);
+    background-image: url('../../assets/img/bebello-cloud.png'), linear-gradient(#fff, #0090CF);
     padding: 5rem;
     background-position: center;
     background-size: cover !important;
@@ -87,7 +87,7 @@
 .active{
     /* border: 2px solid #0090CF;
     border-radius: 30px; */
-    color: #333333!important;
-    font-weight: 700;
+    color: #33333365!important;
+    font-weight: 100; 
 
 }

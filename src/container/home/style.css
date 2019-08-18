@@ -21,12 +21,15 @@ textarea:focus, input:focus{
 
 .home-page{
     text-decoration: none;
+    width: 100%;
+
 }
 
 .bebello-body{
     background-color: #0090CF;
-    color: #fff;
-    padding: 3rem;
+    color: #fff; 
+    width: 100%;
+
 
 }
 

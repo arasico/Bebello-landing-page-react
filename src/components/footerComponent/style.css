@@ -73,7 +73,7 @@
 }
 
 .cloud-dark{
-    background-image: url('../images/bebello-cloud.png'), linear-gradient(#fff, #004877);
+    background-image: url('../../assets/img/bebello-cloud.png'), linear-gradient(#fff, #004877);
     padding: 5rem;
     background-position: center;
     background-size: cover !important;

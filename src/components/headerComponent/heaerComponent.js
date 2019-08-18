@@ -1,11 +1,9 @@
 import React, {Component} from 'react';
-import {Link, NavLink} from 'react-router-dom';
-import Modal from 'react-modal';
-import GoogleLogin from 'react-google-login';
-import GoogleContacts from 'google-contacts';
+import {Link} from 'react-router'; 
+import GoogleLogin from 'react-google-login'; 
  
 
-import './NavBar.css';
+import './style.css';
 
 
 const customStyles = {
@@ -19,7 +17,7 @@ const customStyles = {
 };
 
 
-class NavBar extends Component {
+class HeaderComponent extends Component {
 
     constructor() {
         super()
@@ -30,15 +28,10 @@ class NavBar extends Component {
         }
     }
 
-    componentWillMount() {
-        Modal.setAppElement('body'); 
+    componentWillMount() { 
+        
     }
-
-    toggleModal = () => {
-        this.setState({
-            isActive: !this.state.isActive
-        })
-    }
+ 
 
     componentDidMount() {
         // console.log(this.state.appToken) 
@@ -98,14 +91,14 @@ class NavBar extends Component {
                     <div className="collapse navbar-collapse  justify-content-end" id="navbarNav">
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <NavLink className="nav-link" to={"/Home"} activeClassName={"active"}>Home</NavLink>
+                                <Link className="nav-link" to={"/Home"} activeClassName={"active"}>Home</Link>
                             </li>
                             <li className="nav-item ">
-                                <NavLink className="nav-link" to={"/Bebello"} activeClassName={"active"}>Bebello </NavLink>
+                                <Link className="nav-link" to={"/Bebello"} activeClassName={"active"}>Bebello </Link>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to={"/Download"} activeClassName={"active"}>Download
-                                    App</NavLink>
+                                <Link className="nav-link" to={"/Download"} activeClassName={"active"}>Download
+                                    App</Link>
                             </li>
                             {this.state.appToken === null ? 
                                                         <li className="nav-item bnt-circle btn-primary">
@@ -149,4 +142,4 @@ class NavBar extends Component {
     }
 }
 
-export default NavBar;
+export default HeaderComponent;

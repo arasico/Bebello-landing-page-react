@@ -1,9 +1,9 @@
 import React, { Component} from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 
-import './Footer.css'
+import './style.css'
 
-class Footer extends Component{
+class FooterComponent extends Component{
     render(){
         return(
 
@@ -69,5 +69,5 @@ class Footer extends Component{
 }
 
 
-export default Footer;
+export default FooterComponent;
 
