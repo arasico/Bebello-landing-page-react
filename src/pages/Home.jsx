@@ -30,7 +30,6 @@
            
             alert("User is No Login!");
              
-          
           }
 
           state = {

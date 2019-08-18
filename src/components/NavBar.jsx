@@ -91,15 +91,28 @@ class NavBar extends Component {
 
                                     <div className="btn-group">
                                         <button className="btn btn-secondary btn-lg  " type="button" >
-
-                                            <GoogleLogin
+                                            <p>ddfdfdfdfdfdf</p>
+                                            {/* <GoogleLogin
                                                 clientId={'658977310896-knrl3gka66fldh83dao2rhgbblmd4un9.apps.googleusercontent.com'}
                                                 onSuccess={responseGoogle}
                                                 onFailure={responseGoogle}
                                             >
                                                 <i className="fab fa-google   "></i>
                                                 <span> Login with Google</span>
-                                            </GoogleLogin>
+                                            </GoogleLogin> */}
+
+                                                <GoogleLogin
+                                                    clientId="658977310896-knrl3gka66fldh83dao2rhgbblmd4un9.apps.googleusercontent.com"
+                                                    render={renderProps => (
+                                                    <button onClick={renderProps.onClick} disabled={renderProps.disabled}>This is my custom Google button</button>
+                                                    )}
+                                                    buttonText="Login"
+                                                    onSuccess={responseGoogle}
+                                                    onFailure={responseGoogle}
+                                                    cookiePolicy={'single_host_origin'}
+                                                />
+
+
 
                                         </button>
                                     </div>
