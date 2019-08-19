@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router'; 
 import GoogleLogin from 'react-google-login'; 
+import GoogleContacts from 'google-contacts-api';
+
  
 
 import './style.css';
@@ -56,22 +58,40 @@ class HeaderComponent extends Component {
 
 
         const responseGoogle = async(response) => {
-            // let c = new GoogleContacts({
-            //     token: response
-            //   });
+            console.log(response)
+            console.log(response.accessToken)
+            let c   = await new GoogleContacts({
+                token: response.tokenId
+              });
                
-            //console.log(c.getContacts(cb, params));
-            console.log(response.tokenId);
-            console.log(response); 
+            console.log(c);
+
+
+            c.getContacts((err, contacts) => {
+                console.log("is data ----------")
+                console.log(contacts)
+                console.log(err)
+            });
+
+
+            console.log("##########################################")
+            // console.log(response);  
+            // console.log(response.tokenId); 
+
+
             // console.log(response.w3.ig); 
 
-            if(response.tokenId){ 
-               await this.setItemInlocalStorage("@appTokenBebello" , response.tokenId);
-               await this.setItemInlocalStorage("@username" , response.w3.ig);
-               window.location.reload();
-            } else{
-                alert("login faild")
-            }
+
+
+
+
+            // if(response.tokenId){ 
+            //    await this.setItemInlocalStorage("@appTokenBebello" , response.tokenId);
+            //    await this.setItemInlocalStorage("@username" , response.w3.ig);
+            //    window.location.reload();
+            // } else{
+            //     alert("login faild")
+            // }
 
         }
 
@@ -104,11 +124,7 @@ class HeaderComponent extends Component {
                                                         <li className="nav-item bnt-circle btn-primary">
 
                                                         <GoogleLogin
-                                                        // local host client Id --->
-                                                        //    clientId="112770834425-t5i24lm3rif131rqrin24fns7eqjjp0j.apps.googleusercontent.com"
-                                                           // production client Id --->
-                                                        //    clientId="112770834425-qhnrgd0skump14pjgfa5i97lpoqjsasc.apps.googleusercontent.com"
-                                                           clientId={window.location.hostname === 'localhost' ? '112770834425-t5i24lm3rif131rqrin24fns7eqjjp0j.apps.googleusercontent.com' : '112770834425-qhnrgd0skump14pjgfa5i97lpoqjsasc.apps.googleusercontent.com'}
+                                                            clientId={window.location.hostname === 'localhost' ? '112770834425-t5i24lm3rif131rqrin24fns7eqjjp0j.apps.googleusercontent.com' : '112770834425-qhnrgd0skump14pjgfa5i97lpoqjsasc.apps.googleusercontent.com'}
                                                            render={renderProps => (
                                                            <div onClick={renderProps.onClick} disabled={renderProps.disabled}>
                                                                <i className="fab fa-google"></i>
