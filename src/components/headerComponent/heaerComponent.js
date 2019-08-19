@@ -60,17 +60,15 @@ class HeaderComponent extends Component {
         const responseGoogle = async(response) => {
             console.log(response)
             console.log(response.accessToken)
-            let c   = await new GoogleContacts({
+            let c   =  new GoogleContacts({
                 token: response.tokenId
               });
                
             console.log(c);
 
 
-            c.getContacts((err, contacts) => {
-                console.log("is data ----------")
-                console.log(contacts)
-                console.log(err)
+            c.getContacts(function(params, cb, contacts) {
+                console.log(params)
             });
 
 
@@ -124,7 +122,8 @@ class HeaderComponent extends Component {
                                                         <li className="nav-item bnt-circle btn-primary">
 
                                                         <GoogleLogin
-                                                            clientId={window.location.hostname === 'localhost' ? '112770834425-t5i24lm3rif131rqrin24fns7eqjjp0j.apps.googleusercontent.com' : '112770834425-qhnrgd0skump14pjgfa5i97lpoqjsasc.apps.googleusercontent.com'}
+                                                            // clientId={window.location.hostname === 'localhost' ? '112770834425-t5i24lm3rif131rqrin24fns7eqjjp0j.apps.googleusercontent.com' : '112770834425-qhnrgd0skump14pjgfa5i97lpoqjsasc.apps.googleusercontent.com'}
+                                                            clientId={window.location.hostname === 'localhost' ? '434877835597-st1lde3ig74anie2rpnlosd90p77j3sj.apps.googleusercontent.com' : '434877835597-t2us923u3u6rl1hfgs783hef3nstcn85.apps.googleusercontent.com'}
                                                            render={renderProps => (
                                                            <div onClick={renderProps.onClick} disabled={renderProps.disabled}>
                                                                <i className="fab fa-google"></i>
