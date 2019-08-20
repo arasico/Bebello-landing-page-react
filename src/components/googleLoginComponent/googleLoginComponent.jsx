@@ -39,7 +39,7 @@ class GoogleLoginComponent extends Component {
                await this.setItemInlocalStorage("@username" , response.w3.ig);
                window.location.reload();
             } else{
-                alert("login faild")
+                console.log("login faild")
             }
 
         }
